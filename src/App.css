@@ -1,87 +1,74 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+.Header {
     text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
-.Robert {
-    font-size: 20px;
-    color: red;
-    text-align: left;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.Robert:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.Robert.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.Micheal {
-    font-size: 20px;
-    color: red;
-    text-align: left;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.Micheal:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.Micheal.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.Ahmed {
-    font-size: 20px;
-    color: red;
-    text-align: left;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.Ahmed:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.Ahmed.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.Jacob {
-    font-size: 20px;
-    color: red;
-    text-align: left;
-    will-change: filter;
-    transition: filter 300ms;
-    justify-content: left;
-}
-
-.Jacob:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.Jacob.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.Header{
-  text-align: center;
-  font-size: 40px;
-  color: white;
-  text-decoration: solid;
-
-}
-
-.Info{
-  color: azure;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .Photo {
-  width: 30px;   
-  height: auto;  
-  border-radius: 10px;
-  display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
+.Photo img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 60% 25%;
+    display: block;
+    border: 6px solid white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
 
+.Photos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    margin: 40px;
+}
+
+.Member {
+    background: #111;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+.Member:hover {
+    filter: drop-shadow(0 0 2em yellow);
+}
+.Member.react:hover {
+    filter: drop-shadow(0 0 2em yellow);
+}
+
+.Member h2 {
+    color: red;
+}
+
+.Member img {
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid white;
+}
